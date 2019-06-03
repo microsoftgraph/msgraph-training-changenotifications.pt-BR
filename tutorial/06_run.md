@@ -1,0 +1,23 @@
+<!-- markdownlint-disable MD002 MD041 -->
+
+<span data-ttu-id="66cdf-101">Selecione **Debug > iniciar depuração** para executar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="66cdf-101">Select **Debug > Start debugging** to run the application.</span></span> <span data-ttu-id="66cdf-102">Depois de criar o aplicativo, uma janela do navegador será aberta para uma página 404.</span><span class="sxs-lookup"><span data-stu-id="66cdf-102">After building the application a browser window will open to a 404 page.</span></span> <span data-ttu-id="66cdf-103">Isso é válido, pois nosso aplicativo é uma API e não uma página da Web.</span><span class="sxs-lookup"><span data-stu-id="66cdf-103">This is ok since our application is an API and not a webpage.</span></span>
+
+<span data-ttu-id="66cdf-104">Para inscrever-se para notificações de alteração para usuários, `http://localhost:5000/api/notifications`navegue até a URL a seguir.</span><span class="sxs-lookup"><span data-stu-id="66cdf-104">To subscribe for change notifications for users navigate to the following url `http://localhost:5000/api/notifications`.</span></span> <span data-ttu-id="66cdf-105">Se tiver êxito, você verá a saída que inclui uma ID de assinatura como a seguinte:</span><span class="sxs-lookup"><span data-stu-id="66cdf-105">If successful you will see output that includes a subscription id like the one below:</span></span>
+
+```shell
+Subscribed. Id: e2dbfbe1-160b-42b0-9b9f-8ab79bf8dfed
+```
+
+<span data-ttu-id="66cdf-106">Seu aplicativo agora está inscrito para receber notificações do Microsoft Graph quando uma atualização é feita em qualquer usuário no locatário do Office 365.</span><span class="sxs-lookup"><span data-stu-id="66cdf-106">Your application is now subscribed to receive notifications from the Microsoft Graph when an update is made on any users in the Office 365 tenant.</span></span>
+
+<span data-ttu-id="66cdf-107">Abra um navegador e visite o [centro de administração do Microsoft 365](https://admin.microsoft.com/AdminPortal).</span><span class="sxs-lookup"><span data-stu-id="66cdf-107">Open a browser and visit the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal).</span></span> <span data-ttu-id="66cdf-108">Entre usando uma conta de administrador.</span><span class="sxs-lookup"><span data-stu-id="66cdf-108">Sign-in using an administrator account.</span></span> <span data-ttu-id="66cdf-109">Selecione **usuários > usuários ativos**.</span><span class="sxs-lookup"><span data-stu-id="66cdf-109">Select **Users > Active users**.</span></span> <span data-ttu-id="66cdf-110">Selecione um usuário ativo e selecione **Editar** para suas **informações de contato**.</span><span class="sxs-lookup"><span data-stu-id="66cdf-110">Select an active user and select **Edit** for their **Contact information**.</span></span> <span data-ttu-id="66cdf-111">Atualize o valor do **telefone celular** com um novo número e selecione **salvar**.</span><span class="sxs-lookup"><span data-stu-id="66cdf-111">Update the **Mobile phone** value with a new number and Select **Save**.</span></span>
+
+![Captura de tela dos detalhes do usuário](./images/03.png)
+
+<span data-ttu-id="66cdf-113">No **console de depuração** do Visual Studio, você verá que uma notificação foi recebida.</span><span class="sxs-lookup"><span data-stu-id="66cdf-113">In the **DEBUG CONSOLE** of Visual Studio you will see a notification has been received.</span></span> <span data-ttu-id="66cdf-114">Às vezes, isso pode levar alguns minutos para chegar.</span><span class="sxs-lookup"><span data-stu-id="66cdf-114">Sometimes this may take a few minutes to arrive.</span></span> <span data-ttu-id="66cdf-115">Um exemplo de saída está abaixo de:</span><span class="sxs-lookup"><span data-stu-id="66cdf-115">An example of the output is below:</span></span>
+
+```shell
+Received notification: 'Users/7a7fded6-0269-42c2-a0be-512d58da4463', 7a7fded6-0269-42c2-a0be-512d58da4463
+```
+
+<span data-ttu-id="66cdf-116">Isso indica que o aplicativo recebeu com êxito a notificação do Microsoft Graph para o usuário especificado na saída.</span><span class="sxs-lookup"><span data-stu-id="66cdf-116">This indicates the application successfully received the notification from the Microsoft Graph for the user specified in the output.</span></span> <span data-ttu-id="66cdf-117">Você pode usar essas informações para consultar o gráfico para obter os detalhes completos, se quiser sincronizar seus detalhes no aplicativo.</span><span class="sxs-lookup"><span data-stu-id="66cdf-117">You can then use this information to query the graph for the users full details if you want to synchronize their details into your application.</span></span>
