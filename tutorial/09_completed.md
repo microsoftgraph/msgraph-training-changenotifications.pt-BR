@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Você concluiu o tutorial do Microsoft Graph – notificações de alteração e acompanhamento de alterações. Agora que você tem um aplicativo de trabalho que chama o Microsoft Graph, você pode experimentar e adicionar novos recursos. Visite a [visão geral do Microsoft Graph](/graph/overview) para ver todos os dados que você pode acessar com o Microsoft Graph.
+Você concluiu o tutorial do Microsoft Graph – notificações de alteração e acompanhamento de alterações. Agora que você tem um aplicativo de trabalho que chama o Microsoft Graph, você pode experimentar e adicionar novos recursos. Visite a [visão geral do Microsoft Graph](https://docs.microsoft.com/graph/overview) para ver todos os dados que você pode acessar com o Microsoft Graph.
 
 ## <a name="feedback"></a>Comentários
 

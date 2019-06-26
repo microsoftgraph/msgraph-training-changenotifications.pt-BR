@@ -16,7 +16,7 @@ Neste laboratório, você criará um aplicativo de console do .NET Core que rece
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Antes de iniciar este tutorial, você deve ter o [.NET Core 2,2 SDK](https://dotnet.microsoft.com/download) e o [código do Visual Studio](https://code.visualstudio.com/) instalados em sua máquina de desenvolvimento. Se você não os tiver instalado, visite os links anteriores para obter opções de download.
+Antes de iniciar este tutorial, você deve ter o [.NET Core 2,2 SDK](https://dotnet.microsoft.com/download) e o [código do Visual Studio](https://code.visualstudio.com/) instalados em sua máquina de desenvolvimento. 
 
 ## <a name="completed-exercises"></a>Exercícios concluídos
 

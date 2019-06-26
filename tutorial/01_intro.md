@@ -7,10 +7,20 @@ Este tutorial ensina como criar um aplicativo do .NET Core que usa a API do Micr
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Antes de iniciar este tutorial, você deve ter o [.NET Core 2,2 SDK](https://dotnet.microsoft.com/download) e o [código do Visual Studio](https://code.visualstudio.com/) instalados em sua máquina de desenvolvimento. Se você não os tiver instalado, visite os links anteriores para obter opções de download.
+Antes de iniciar este tutorial, você deve ter o [.NET Core 2,2 SDK](https://dotnet.microsoft.com/download) e o [código do Visual Studio](https://code.visualstudio.com/) instalados em sua máquina de desenvolvimento.
 
 > [!NOTE]
 > Este tutorial foi escrito com a versão 2,2 do .NET Core. As etapas deste guia podem funcionar com outras versões, mas que não foram testadas.
+
+## <a name="watch-the-tutorial"></a>Assista ao tutorial
+
+Este módulo foi gravado e está disponível no canal do Office Development YouTube.
+
+<!-- markdownlint-disable MD033 MD034 -->
+<br/>
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/fThiCZmIcMQ]
+<!-- markdownlint-enable MD033 MD034 -->
 
 ## <a name="feedback"></a>Comentários
 

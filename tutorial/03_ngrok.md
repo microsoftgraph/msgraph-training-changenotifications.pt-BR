@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Para que o Microsoft Graph envie notificações para seu aplicativo em execução na sua máquina de desenvolvimento, você precisa usar uma ferramenta como o ngrok para encapsular chamadas da Internet para seu computador. O Ngrok permite que as chamadas da Internet sejam direcionadas para o aplicativo executado localmente, sem a necessidade de criar regras de firewall.
+Para que o Microsoft Graph envie notificações para seu aplicativo em execução na sua máquina de desenvolvimento, você precisa usar uma ferramenta como o ngrok para encapsular chamadas da Internet para seu computador de desenvolvimento. O Ngrok permite que as chamadas da Internet sejam direcionadas para o aplicativo executado localmente, sem a necessidade de criar regras de firewall.
 
 Antes de continuar, você deve ter o [ngrok](https://ngrok.com) instalado em sua máquina de desenvolvimento. Se você não tiver o ngrok, visite o link anterior para obter instruções e opções de download.
 
-Após a instalação, execute o ngrok.
+Execute o ngrok executando o seguinte na linha de comando:
 
 ```shell
 ngrok http 5000
@@ -21,7 +21,7 @@ Copie o endereço de encaminhamento HTTPS. No exemplo abaixo, isso seria `https:
 ngrok by @inconshreveable
 
 Session Status                online
-Account                       Basic
+Account                       ???? ???? (Plan: Free)
 Version                       2.3.15
 Region                        United States (us)
 Web Interface                 http://127.0.0.1:4040
