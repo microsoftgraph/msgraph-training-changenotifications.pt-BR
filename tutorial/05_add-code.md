@@ -1,22 +1,24 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-<span data-ttu-id="ebccf-101">Abra o arquivo **Startup.cs** e comente a linha a seguir para desabilitar o redirecionamento SSL.</span><span class="sxs-lookup"><span data-stu-id="ebccf-101">Open the **Startup.cs** file and comment out the following line to disable ssl redirection.</span></span>
+<span data-ttu-id="26fc5-101">Abra o arquivo **Startup.cs** e comente a linha a seguir para desabilitar o redirecionamento SSL.</span><span class="sxs-lookup"><span data-stu-id="26fc5-101">Open the **Startup.cs** file and comment out the following line to disable ssl redirection.</span></span>
 
 ```csharp
 //app.UseHttpsRedirection();
 ```
 
-### <a name="add-model-classes"></a><span data-ttu-id="ebccf-102">Adicionar classes de modelo</span><span class="sxs-lookup"><span data-stu-id="ebccf-102">Add model classes</span></span>
+### <a name="add-model-classes"></a><span data-ttu-id="26fc5-102">Adicionar classes de modelo</span><span class="sxs-lookup"><span data-stu-id="26fc5-102">Add model classes</span></span>
 
-<span data-ttu-id="ebccf-103">O aplicativo usa várias novas classes de modelo para serialização de mensagens de/para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="ebccf-103">The application uses several new model classes for (de)serialization of messages to/from the Microsoft Graph.</span></span>
+<span data-ttu-id="26fc5-103">O aplicativo usa várias novas classes de modelo para serialização de mensagens de/para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="26fc5-103">The application uses several new model classes for (de)serialization of messages to/from the Microsoft Graph.</span></span>
 
-<span data-ttu-id="ebccf-104">Clique com o botão direito do mouse na árvore de arquivos do projeto e selecione **nova pasta**.</span><span class="sxs-lookup"><span data-stu-id="ebccf-104">Right-click in the project file tree and select **New Folder**.</span></span> <span data-ttu-id="ebccf-105">Nomear **modelos** de ti clique com o botão direito do mouse na pasta **modelos** e adicione três novos arquivos:</span><span class="sxs-lookup"><span data-stu-id="ebccf-105">Name it **Models** Right-click the **Models** folder and add three new files:</span></span>
+<span data-ttu-id="26fc5-104">Clique com o botão direito do mouse na árvore de arquivos do projeto e selecione **nova pasta**.</span><span class="sxs-lookup"><span data-stu-id="26fc5-104">Right-click in the project file tree and select **New Folder**.</span></span> <span data-ttu-id="26fc5-105">**Modelos** de ti de nome</span><span class="sxs-lookup"><span data-stu-id="26fc5-105">Name it **Models**</span></span>
 
-- <span data-ttu-id="ebccf-106">**Notification.cs**</span><span class="sxs-lookup"><span data-stu-id="ebccf-106">**Notification.cs**</span></span>
-- <span data-ttu-id="ebccf-107">**ResourceData.cs**</span><span class="sxs-lookup"><span data-stu-id="ebccf-107">**ResourceData.cs**</span></span>
-- <span data-ttu-id="ebccf-108">**MyConfig.cs**</span><span class="sxs-lookup"><span data-stu-id="ebccf-108">**MyConfig.cs**</span></span>
+<span data-ttu-id="26fc5-106">Clique com o botão direito do mouse na pasta **modelos** e adicione três novos arquivos:</span><span class="sxs-lookup"><span data-stu-id="26fc5-106">Right-click the **Models** folder and add three new files:</span></span>
 
-<span data-ttu-id="ebccf-109">Substitua o conteúdo de **Notification.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="ebccf-109">Replace the contents of **Notification.cs** with the following:</span></span>
+- <span data-ttu-id="26fc5-107">**Notification.cs**</span><span class="sxs-lookup"><span data-stu-id="26fc5-107">**Notification.cs**</span></span>
+- <span data-ttu-id="26fc5-108">**ResourceData.cs**</span><span class="sxs-lookup"><span data-stu-id="26fc5-108">**ResourceData.cs**</span></span>
+- <span data-ttu-id="26fc5-109">**MyConfig.cs**</span><span class="sxs-lookup"><span data-stu-id="26fc5-109">**MyConfig.cs**</span></span>
+
+<span data-ttu-id="26fc5-110">Substitua o conteúdo de **Notification.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="26fc5-110">Replace the contents of **Notification.cs** with the following:</span></span>
 
 ```csharp
 using Newtonsoft.Json;
@@ -60,7 +62,7 @@ namespace msgraphapp.Models
 }
 ```
 
-<span data-ttu-id="ebccf-110">Substitua o conteúdo de **ResourceData.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="ebccf-110">Replace the contents of **ResourceData.cs** with the following:</span></span>
+<span data-ttu-id="26fc5-111">Substitua o conteúdo de **ResourceData.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="26fc5-111">Replace the contents of **ResourceData.cs** with the following:</span></span>
 
 ```csharp
 using Newtonsoft.Json;
@@ -88,7 +90,7 @@ namespace msgraphapp.Models
 }
 ```
 
-<span data-ttu-id="ebccf-111">Substitua o conteúdo de **MyConfig.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="ebccf-111">Replace the contents of **MyConfig.cs** with the following:</span></span>
+<span data-ttu-id="26fc5-112">Substitua o conteúdo de **MyConfig.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="26fc5-112">Replace the contents of **MyConfig.cs** with the following:</span></span>
 
 ```csharp
 namespace msgraphapp
@@ -103,7 +105,7 @@ namespace msgraphapp
 }
 ```
 
-<span data-ttu-id="ebccf-112">Abra o arquivo **Startup.cs** e substitua o conteúdo pelo seguinte.</span><span class="sxs-lookup"><span data-stu-id="ebccf-112">Open the **Startup.cs** file and replace the contents with the following.</span></span>
+<span data-ttu-id="26fc5-113">Abra o arquivo **Startup.cs** .</span><span class="sxs-lookup"><span data-stu-id="26fc5-113">Open the **Startup.cs** file.</span></span> <span data-ttu-id="26fc5-114">Localize o método `ConfigureServices()` Method & substitua-o pelo seguinte código:</span><span class="sxs-lookup"><span data-stu-id="26fc5-114">Locate the method `ConfigureServices()` method & replace it with the following code:</span></span>
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -115,7 +117,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-<span data-ttu-id="ebccf-113">Abra o arquivo **appSettings. JSON** e substitua o conteúdo a seguir.</span><span class="sxs-lookup"><span data-stu-id="ebccf-113">Open the **appsettings.json** file and replace the content the following.</span></span>
+<span data-ttu-id="26fc5-115">Abra o arquivo **appSettings. JSON** e substitua o conteúdo a seguir.</span><span class="sxs-lookup"><span data-stu-id="26fc5-115">Open the **appsettings.json** file and replace the content the following.</span></span>
 
 ```json
 {
@@ -134,19 +136,19 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-<span data-ttu-id="ebccf-114">Substitua as seguintes variáveis pelos valores que você copiou anteriormente:</span><span class="sxs-lookup"><span data-stu-id="ebccf-114">Replace the following variables with the values you copied earlier:</span></span>
+<span data-ttu-id="26fc5-116">Substitua as seguintes variáveis pelos valores que você copiou anteriormente:</span><span class="sxs-lookup"><span data-stu-id="26fc5-116">Replace the following variables with the values you copied earlier:</span></span>
 
-    - <span data-ttu-id="ebccf-115">`<NGROK URL>`deve ser definido como a URL https ngrok que você copiou anteriormente.</span><span class="sxs-lookup"><span data-stu-id="ebccf-115">`<NGROK URL>` should be set to the https ngrok url you copied earlier.</span></span>
-    - <span data-ttu-id="ebccf-116">`<TENANT ID>`deve ser sua ID de locatário do Office 365, por exemplo.</span><span class="sxs-lookup"><span data-stu-id="ebccf-116">`<TENANT ID>` should be your Office 365 tenant id, for example.</span></span> <span data-ttu-id="ebccf-117">**contoso.onmicrosoft.com**.</span><span class="sxs-lookup"><span data-stu-id="ebccf-117">**contoso.onmicrosoft.com**.</span></span>
-    - <span data-ttu-id="ebccf-118">`<APP ID>`e `<APP SECRET>` deve ser a ID do aplicativo e o segredo copiado anteriormente quando você criou o registro do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="ebccf-118">`<APP ID>` and `<APP SECRET>` should be the application id and secret you copied earlier when you created the application registration.</span></span>
+- <span data-ttu-id="26fc5-117">`<NGROK URL>`deve ser definido como a URL https ngrok que você copiou anteriormente.</span><span class="sxs-lookup"><span data-stu-id="26fc5-117">`<NGROK URL>` should be set to the https ngrok url you copied earlier.</span></span>
+- <span data-ttu-id="26fc5-118">`<TENANT ID>`deve ser sua ID de locatário do Office 365, por exemplo: **contoso.onmicrosoft.com**.</span><span class="sxs-lookup"><span data-stu-id="26fc5-118">`<TENANT ID>` should be your Office 365 tenant id, for example: **contoso.onmicrosoft.com**.</span></span>
+- <span data-ttu-id="26fc5-119">`<APP ID>`e `<APP SECRET>` deve ser a ID do aplicativo e o segredo copiado anteriormente quando você criou o registro do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="26fc5-119">`<APP ID>` and `<APP SECRET>` should be the application id and secret you copied earlier when you created the application registration.</span></span>
 
-### <a name="add-notification-controller"></a><span data-ttu-id="ebccf-119">Adicionar controlador de notificação</span><span class="sxs-lookup"><span data-stu-id="ebccf-119">Add notification controller</span></span>
+### <a name="add-notification-controller"></a><span data-ttu-id="26fc5-120">Adicionar controlador de notificação</span><span class="sxs-lookup"><span data-stu-id="26fc5-120">Add notification controller</span></span>
 
-<span data-ttu-id="ebccf-120">O aplicativo requer um novo controlador para processar a assinatura e a notificação.</span><span class="sxs-lookup"><span data-stu-id="ebccf-120">The application requires a new controller to process the subscription and notification.</span></span>
+<span data-ttu-id="26fc5-121">O aplicativo requer um novo controlador para processar a assinatura e a notificação.</span><span class="sxs-lookup"><span data-stu-id="26fc5-121">The application requires a new controller to process the subscription and notification.</span></span>
 
-<span data-ttu-id="ebccf-121">Clique com o botão `Controllers` direito do mouse na pasta, selecione **novo arquivo**e nomeie o controlador **NotificationsController.cs**.</span><span class="sxs-lookup"><span data-stu-id="ebccf-121">Right-click the `Controllers` folder, select **New File**, and name the controller **NotificationsController.cs**.</span></span>
+<span data-ttu-id="26fc5-122">Clique com o botão `Controllers` direito do mouse na pasta, selecione **novo arquivo**e nomeie o controlador **NotificationsController.cs**.</span><span class="sxs-lookup"><span data-stu-id="26fc5-122">Right-click the `Controllers` folder, select **New File**, and name the controller **NotificationsController.cs**.</span></span>
 
-<span data-ttu-id="ebccf-122">Substitua o conteúdo de **NotificationController.cs** pelo seguinte:</span><span class="sxs-lookup"><span data-stu-id="ebccf-122">Replace the contents of **NotificationController.cs** with the following:</span></span>
+<span data-ttu-id="26fc5-123">Substitua o conteúdo do **NotificationController.cs** pelo seguinte código:</span><span class="sxs-lookup"><span data-stu-id="26fc5-123">Replace the contents of **NotificationController.cs** with the following code:</span></span>
 
 ```csharp
 using System;
@@ -244,25 +246,21 @@ namespace msgraphapp.Controllers
 
     private async Task<string> GetAccessToken()
     {
-        ClientCredential clientCredentials = new ClientCredential(secret: config.AppSecret);
+      IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create(config.AppId)
+        .WithClientSecret(config.AppSecret)
+        .WithAuthority($"https://login.microsoftonline.com/{config.TenantId}")
+        .WithRedirectUri("https://daemon")
+        .Build();
 
-        var app = new ConfidentialClientApplication(
-            clientId: config.AppId,
-            authority: $"https://login.microsoftonline.com/{config.TenantId}",
-            redirectUri: "https://daemon",
-            clientCredential: clientCredentials,
-            userTokenCache: null,
-            appTokenCache: new TokenCache()
-        );
+      string[] scopes = new string[] { "https://graph.microsoft.com/.default" };
 
-        string[] scopes = new string[] { "https://graph.microsoft.com/.default" };
+      var result = await app.AcquireTokenForClient(scopes).ExecuteAsync();
 
-        var result = await app.AcquireTokenForClientAsync(scopes);
-
-        return result.AccessToken;
+      return result.AccessToken;
     }
+
   }
 }
 ```
 
-<span data-ttu-id="ebccf-123">**Salve** todos os arquivos.</span><span class="sxs-lookup"><span data-stu-id="ebccf-123">**Save** all files.</span></span>
+<span data-ttu-id="26fc5-124">**Salve** todos os arquivos.</span><span class="sxs-lookup"><span data-stu-id="26fc5-124">**Save** all files.</span></span>
